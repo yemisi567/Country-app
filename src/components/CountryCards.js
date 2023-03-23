@@ -30,7 +30,7 @@ const CountryCards = ({ loading, data, query }) => {
               .sort((a, b) => (a.name.common < b.name.common ? -1 : 1))
               .map((data) => (
                 <a
-                  href={`/country/${data?.name?.common}`}
+                  href={`/country/:${data?.name?.common}`}
                   key={data?.name?.common}
                 >
                   <div
